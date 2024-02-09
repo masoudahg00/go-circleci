@@ -1,4 +1,4 @@
-module github.com/grezar/go-circleci
+module github.com/axelKingsley/go-circleci
 
 go 1.17
 
