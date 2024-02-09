@@ -161,13 +161,13 @@ type TestMetadataList struct {
 }
 
 type TestMetadata struct {
-	Message   string `json:"message"`
-	Source    string `json:"source"`
-	RunTime   string `json:"run_time"`
-	File      string `json:"file"`
-	Result    string `json:"result"`
-	Name      string `json:"name"`
-	Classname string `json:"classname"`
+	Message   string  `json:"message"`
+	Source    string  `json:"source"`
+	RunTime   float64 `json:"run_time"`
+	File      string  `json:"file"`
+	Result    string  `json:"result"`
+	Name      string  `json:"name"`
+	Classname string  `json:"classname"`
 }
 
 func (s *jobs) ListTestMetadata(ctx context.Context, projectSlug string, jobNumber string) (*TestMetadataList, error) {
